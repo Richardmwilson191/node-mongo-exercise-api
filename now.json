@@ -1,0 +1,7 @@
+{
+  "name": "node-exercise-api",
+  "version": 2,
+  "env": {
+    "MONGODB_URI": "mongodb+srv://RichardWilson:Richierock191@cluster0-2hk38.mongodb.net/test?retryWrites=true&w=majority"
+  }
+}
