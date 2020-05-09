@@ -7,6 +7,10 @@ const app = express();
 
 connectDB();
 
+app.get('/', (req, res) => {
+  res.redirect('/api/exercises');
+});
+
 app.use(express.json({ extended: false }));
 app.use('/api/exercises', exercises);
 
