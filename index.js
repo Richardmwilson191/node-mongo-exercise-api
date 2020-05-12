@@ -5,15 +5,15 @@ const exercises = require('./api/exercise-api');
 
 const app = express();
 
-connectDB();
+// connectDB();
 
 app.get('/', (req, res) => {
   // res.redirect('/api/exercises');
   res.send('hello');
 });
 
-app.use(express.json({ extended: false }));
-app.use('/api/exercises', exercises);
+// app.use(express.json({ extended: false }));
+// app.use('/api/exercises', exercises);
 
 const Port = process.env.Port || 3000;
 
