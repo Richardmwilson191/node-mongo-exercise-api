@@ -8,7 +8,8 @@ const app = express();
 connectDB();
 
 app.get('/', (req, res) => {
-  res.redirect('/api/exercises');
+  // res.redirect('/api/exercises');
+  res.send('hello');
 });
 
 app.use(express.json({ extended: false }));

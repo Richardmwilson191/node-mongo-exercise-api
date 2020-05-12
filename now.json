@@ -1,6 +1,8 @@
 {
-  "name": "node-exercise-api",
+  "version": 2,
+  "builds": [{ "src": "*.js", "use": "@now/node" }],
   "env": {
-    "MONGODB_URI": "mongodb+srv://RichardWilson:Richierock191@cluster0-2hk38.mongodb.net/test?retryWrites=true&w=majority"
+    "MONGODB_URI": "@node-exercise-api",
+    "SECRET": "@node-exercise-api"
   }
 }
