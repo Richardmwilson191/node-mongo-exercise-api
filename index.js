@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
 // app.use(express.json({ extended: false }));
 // app.use('/api/exercises', exercises);
 
-const Port = process.env.Port || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(Port, () => {
-  console.log('started');
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
 });
